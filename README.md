@@ -5,10 +5,6 @@ A no-code solution that seamlessly integrates filtering and pagination into your
 ⚠️ **Note:**
 - This solution is **designed exclusively for Xano** as the backend.
 
-
-
-  
-
 ## 🚀 Quick Links
 
 - [📺 Checkout the Demo](https://www.notion.so/Wized-Filters-and-Pagination-19e18ed965d88089afa2fe9c749eb857?pvs=21)
