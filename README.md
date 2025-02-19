@@ -1,13 +1,17 @@
 # Wized Filter and Pagination
 
 A no-code solution that seamlessly integrates filtering and pagination into your Webflow, Wized, and Xano projects. By simply adding attributes to your Webflow filters and configuring requests and elements in Wized, you can set up a fully functional system in minutes—saving you hours of development time.
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+
 ⚠️ **Note:**
 
 - This solution is **designed exclusively for Xano** as the backend.
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
 
 ## 🚀 Quick Links
 
@@ -18,6 +22,13 @@ A no-code solution that seamlessly integrates filtering and pagination into your
 - [☕ Buy Me a Coffee](https://www.notion.so/Wized-Filters-and-Pagination-19e18ed965d88089afa2fe9c749eb857?pvs=21)
 - [Create an Account on Wized (Affiliate Link)](http://www.google.com)
 - [Create an Account On Xano (Affiliate Link)](https://www.notion.so/44aa13088fd244a2aa43a12bad7bf205?pvs=21)
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
 
 ## Supported Filter Types
 
@@ -31,6 +42,13 @@ A no-code solution that seamlessly integrates filtering and pagination into your
 - [**Chips**](#create-chips-filter-and-its-attributes-list) – Visual filter tags for quick selection.
 - [**Reset All Filters**](#create-reset-all-and-its-attributes-list) – Clear all active filters at once.
 - [**Reset Individual Filters**](#create-single-reset-for-filter-category-and-its-attributes-list) – Remove specific filters without affecting others.
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
 
 ## Features
 
@@ -42,6 +60,13 @@ A no-code solution that seamlessly integrates filtering and pagination into your
 - **Debounced Filter Updates** – Prevent unnecessary requests for a smoother experience.
 - **State Management Built-in** – Filters stay in sync without extra setup.
 - **Seamless Infinite Scroll** – Load more content automatically as users scroll.
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
 
 ## Get Started
 
@@ -56,6 +81,14 @@ To use **Wized Filter and Pagination**, include the CDN link in the `<head>` tag
 ></script>
 ```
 
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
 ## Setup
 
 ### Add Attribute to the Form Element that contains the filters
@@ -63,6 +96,14 @@ To use **Wized Filter and Pagination**, include the CDN link in the `<head>` tag
 | **ATTRIBUTE**      | **VALUE**         | **REQUIRED** | **DESCRIPTION**                                                                        |
 | ------------------ | ----------------- | ------------ | -------------------------------------------------------------------------------------- |
 | `w-filter-wrapper` | (No value needed) | ✅           | The Webflow form element that wraps all filters, pagination, and items to be filtered. |
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
 
 ## Create Infinite Pagination and its attributes list {#create-infinite-pagination-and-its-attributes-list}
 
@@ -96,6 +137,14 @@ To implement infinite pagination correctly, follow these key setup steps:
 | `w-filter-result-variable`             | _Wized Variable Name_     | ✅           | The variable that stores the **entire dataset** being filtered and paginated. This variable gets updated as new data is fetched.                        |
 | `w-filter-result-data-path`            | _Wized Request Data Path_ | ✅           | Specifies the **data path** where the new batch of content is located. The script retrieves this data and appends it to the `w-filter-result-variable`. |
 
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
 ## Create Checkbox Filter and its attributes list
 
 - This filter is ideal for allowing users to select multiple options within a category.
@@ -112,6 +161,14 @@ To implement infinite pagination correctly, follow these key setup steps:
 | `w-filter-pagination-current-variable` | _WIZED VARIABLE NAME_ | ✅           | Ensures pagination resets to **page 1** when a checkbox is selected/deselected. Must match the correct Wized variable for pagination.                                        |
 | `w-filter-request`                     | _WIZED REQUEST NAME_  | ✅           | Fires a Wized request to reload filtered content whenever a checkbox is toggled.                                                                                             |
 
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
 ## Create Radio Select Filter and its attributes list
 
 - This filter is ideal for allowing users to select only one option from a predefined set.
@@ -127,6 +184,14 @@ To implement infinite pagination correctly, follow these key setup steps:
 | `w-filter-radio-category`              | _UNIQUE IDENTIFIER_   | ✅           | Groups radios together. Essential for **Chips Filters** and for targeting specific radio groups when using the reset feature.                                                   |
 | `w-filter-pagination-current-variable` | _WIZED VARIABLE NAME_ | ✅           | Ensures pagination resets to **page 1** when a radio is selected/deselected. Must match the correct Wized variable for pagination.                                              |
 | `w-filter-request`                     | _WIZED REQUEST NAME_  | ✅           | Fires a Wized request to reload filtered content whenever a radio is selected or reset                                                                                          |
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
 
 ## Create Select Filter and its attributes list
 
@@ -170,6 +235,14 @@ The other text element in the div block will need to have the following attribut
 | ------------------------ | ------------------ | ------------ | ------------------------------------------------------------------------------------- |
 | `wized`                  | _WIZED IDENTIFIER_ | ✅           | Used to render the option value.                                                      |
 | `w-filter-select-option` | value-text         | ✅           | Defines the actual **value** that will be stored in the Wized variable when selected. |
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
 
 ## Create Select Range Filter and its attributes list
 
@@ -243,6 +316,14 @@ If your select range filter needs to dynamically load options, follow these addi
 | `wized`                           | _Wized Identifier_ | ✅           | Used to render the option value.                                                 |
 | `w-filter-select-range-to-value`  | `value-text`       | ✅           | Defines the **value** that will be stored in the Wized variable when selected.   |
 
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
 ## Create Sort Filter and its attributes list
 
 - This filter allows users to sort content using a select dropdown.
@@ -277,6 +358,14 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 | `w-filter-sort-orderby` | `asc` / `desc`                  | ✅           | Determines whether the sorting is **ascending (asc)** or **descending (desc)**.                                              |
 | `w-filter-sort-sortby`  | _(Column field name from Xano)_ | ✅           | Specifies the field in Xano by which the content will be sorted. This must match the exact field name in your Xano database. |
 
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
 ## Create Chips Filter and its attributes list
 
 - Chips are dynamically generated based on the filters selected by the user.
@@ -303,6 +392,14 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 | --------------- | --------- | ------------ | ---------------------------------------------------------------------------------------- |
 | `w-filter-chip` | `remove`  | ✅           | Applied to the link block inside the chip. Clicking it removes the corresponding filter. |
 
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
 ## Create Search Filter and its attributes list
 
 - The Search Filter allows users to filter content based on a keyword search.
@@ -318,6 +415,14 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 | `w-filter-request`                     | _Wized Request Name_  | ✅           | Fires a Wized request to reload filtered content whenever a user types in the search input.                                  |
 | `w-filter-pagination-current-variable` | _Wized Variable Name_ | ✅           | Ensures pagination resets to **page 1** when a search term is entered. Must match the correct Wized variable for pagination. |
 
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
 ## Create Reset All and its attributes list
 
 - This feature allows users to reset all active filters with a single click.
@@ -330,6 +435,14 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 | `w-filter-request`                     | _Wized Request Name_  | ✅           | Fires a Wized request to reload filtered content whenever a user clicks on it                                                |
 | `w-filter-pagination-current-variable` | _Wized Variable Name_ | ✅           | Ensures pagination resets to **page 1** when a search term is entered. Must match the correct Wized variable for pagination. |
 
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
 ## Create Single Reset For Filter Category and its attributes list
 
 - This feature allows users to reset a specific filter category without affecting others.
@@ -341,9 +454,25 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 | ------------------------- | ------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------- |
 | `w-filter-checkbox-reset` | _(Same value as the `w-filter-{{filter-type}}-category` attribute)_ | ✅           | Clicking this button resets the filter category if the value matches the associated filter group. |
 
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
 ## License
 
 This project is licensed under the ISC License - see the [LICENSE](https://github.com/aonnoy/wized-filter-pagination/blob/main/LICENSE) file for details.
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
 
 ## Support
 
