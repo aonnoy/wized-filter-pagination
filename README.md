@@ -79,7 +79,7 @@ To use **Wized Filter and Pagination**, include the CDN link in the `<head>` tag
   <br><br>
   <br><br>
 
-## Create Infinite Pagination and its attributes list {#create-infinite-pagination-and-its-attributes-list}
+## Create Infinite Pagination and its attributes list
 
 This feature enables infinite scrolling, where more content loads dynamically as the user scrolls.
 To implement infinite pagination correctly, follow these key setup steps:
