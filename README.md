@@ -8,10 +8,6 @@ A no-code solution that seamlessly integrates filtering and pagination into your
   <br><br>
   <br><br>
   <br><br>
-  <br><br>
-  <br><br>
-  <br><br>
-  <br><br>
 
 ## 🚀 Quick Links
 
