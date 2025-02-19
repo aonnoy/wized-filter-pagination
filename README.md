@@ -392,17 +392,9 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 | ------------------------- | ------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------- |
 | `w-filter-checkbox-reset` | _(Same value as the `w-filter-{{filter-type}}-category` attribute)_ | ✅           | Clicking this button resets the filter category if the value matches the associated filter group. |
 
-  <br><br>
-  <br><br>
-  <br><br>
-
 ## License
 
 This project is licensed under the ISC License - see the [LICENSE](https://github.com/aonnoy/wized-filter-pagination/blob/main/LICENSE) file for details.
-
-  <br><br>
-  <br><br>
-  <br><br>
 
 ## Support
 
