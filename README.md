@@ -151,13 +151,9 @@ To implement infinite pagination correctly, follow these key setup steps:
 | `w-filter-pagination-current-variable` | _WIZED VARIABLE NAME_ | ✅           | Ensures pagination resets to **page 1** when a radio is selected/deselected. Must match the correct Wized variable for pagination.                                              |
 | `w-filter-request`                     | _WIZED REQUEST NAME_  | ✅           | Fires a Wized request to reload filtered content whenever a radio is selected or reset                                                                                          |
 
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+  <br><br>
+  <br><br>
+  <br><br>
 
 ## Create Select Filter and its attributes list
 
@@ -202,13 +198,9 @@ The other text element in the div block will need to have the following attribut
 | `wized`                  | _WIZED IDENTIFIER_ | ✅           | Used to render the option value.                                                      |
 | `w-filter-select-option` | value-text         | ✅           | Defines the actual **value** that will be stored in the Wized variable when selected. |
 
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+  <br><br>
+  <br><br>
+  <br><br>
 
 ## Create Select Range Filter and its attributes list
 
@@ -282,13 +274,9 @@ If your select range filter needs to dynamically load options, follow these addi
 | `wized`                           | _Wized Identifier_ | ✅           | Used to render the option value.                                                 |
 | `w-filter-select-range-to-value`  | `value-text`       | ✅           | Defines the **value** that will be stored in the Wized variable when selected.   |
 
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+  <br><br>
+  <br><br>
+  <br><br>
 
 ## Create Sort Filter and its attributes list
 
@@ -324,13 +312,9 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 | `w-filter-sort-orderby` | `asc` / `desc`                  | ✅           | Determines whether the sorting is **ascending (asc)** or **descending (desc)**.                                              |
 | `w-filter-sort-sortby`  | _(Column field name from Xano)_ | ✅           | Specifies the field in Xano by which the content will be sorted. This must match the exact field name in your Xano database. |
 
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+  <br><br>
+  <br><br>
+  <br><br>
 
 ## Create Chips Filter and its attributes list
 
@@ -358,13 +342,9 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 | --------------- | --------- | ------------ | ---------------------------------------------------------------------------------------- |
 | `w-filter-chip` | `remove`  | ✅           | Applied to the link block inside the chip. Clicking it removes the corresponding filter. |
 
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+  <br><br>
+  <br><br>
+  <br><br>
 
 ## Create Search Filter and its attributes list
 
@@ -381,13 +361,9 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 | `w-filter-request`                     | _Wized Request Name_  | ✅           | Fires a Wized request to reload filtered content whenever a user types in the search input.                                  |
 | `w-filter-pagination-current-variable` | _Wized Variable Name_ | ✅           | Ensures pagination resets to **page 1** when a search term is entered. Must match the correct Wized variable for pagination. |
 
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+  <br><br>
+  <br><br>
+  <br><br>
 
 ## Create Reset All and its attributes list
 
@@ -401,13 +377,9 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 | `w-filter-request`                     | _Wized Request Name_  | ✅           | Fires a Wized request to reload filtered content whenever a user clicks on it                                                |
 | `w-filter-pagination-current-variable` | _Wized Variable Name_ | ✅           | Ensures pagination resets to **page 1** when a search term is entered. Must match the correct Wized variable for pagination. |
 
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+  <br><br>
+  <br><br>
+  <br><br>
 
 ## Create Single Reset For Filter Category and its attributes list
 
@@ -420,25 +392,17 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 | ------------------------- | ------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------- |
 | `w-filter-checkbox-reset` | _(Same value as the `w-filter-{{filter-type}}-category` attribute)_ | ✅           | Clicking this button resets the filter category if the value matches the associated filter group. |
 
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+  <br><br>
+  <br><br>
+  <br><br>
 
 ## License
 
 This project is licensed under the ISC License - see the [LICENSE](https://github.com/aonnoy/wized-filter-pagination/blob/main/LICENSE) file for details.
 
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+  <br><br>
+  <br><br>
+  <br><br>
 
 ## Support
 
