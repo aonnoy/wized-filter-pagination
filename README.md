@@ -1,17 +1,13 @@
 # Wized Filter and Pagination
 
 A no-code solution that seamlessly integrates filtering and pagination into your Webflow, Wized, and Xano projects. By simply adding attributes to your Webflow filters and configuring requests and elements in Wized, you can set up a fully functional system in minutes—saving you hours of development time.
-
-
-
+<br><br>
+<br><br>
+<br><br>
+<br><br>
 ⚠️ **Note:**
 
 - This solution is **designed exclusively for Xano** as the backend.
-
-
-
-
-
 
 ## 🚀 Quick Links
 
@@ -22,11 +18,6 @@ A no-code solution that seamlessly integrates filtering and pagination into your
 - [☕ Buy Me a Coffee](https://www.notion.so/Wized-Filters-and-Pagination-19e18ed965d88089afa2fe9c749eb857?pvs=21)
 - [Create an Account on Wized (Affiliate Link)](http://www.google.com)
 - [Create an Account On Xano (Affiliate Link)](https://www.notion.so/44aa13088fd244a2aa43a12bad7bf205?pvs=21)
-
-
-
-
-
 
 ## Supported Filter Types
 
@@ -41,11 +32,6 @@ A no-code solution that seamlessly integrates filtering and pagination into your
 - [**Reset All Filters**](#create-reset-all-and-its-attributes-list) – Clear all active filters at once.
 - [**Reset Individual Filters**](#create-single-reset-for-filter-category-and-its-attributes-list) – Remove specific filters without affecting others.
 
-
-
-
-
-
 ## Features
 
 - **Custom Filter Triggers** – Define how and when filters are applied.
@@ -56,11 +42,6 @@ A no-code solution that seamlessly integrates filtering and pagination into your
 - **Debounced Filter Updates** – Prevent unnecessary requests for a smoother experience.
 - **State Management Built-in** – Filters stay in sync without extra setup.
 - **Seamless Infinite Scroll** – Load more content automatically as users scroll.
-
-
-
-
-
 
 ## Get Started
 
@@ -75,10 +56,6 @@ To use **Wized Filter and Pagination**, include the CDN link in the `<head>` tag
 ></script>
 ```
 
-
-
-
-
 ## Setup
 
 ### Add Attribute to the Form Element that contains the filters
@@ -87,15 +64,10 @@ To use **Wized Filter and Pagination**, include the CDN link in the `<head>` tag
 | ------------------ | ----------------- | ------------ | -------------------------------------------------------------------------------------- |
 | `w-filter-wrapper` | (No value needed) | ✅           | The Webflow form element that wraps all filters, pagination, and items to be filtered. |
 
-## Create Infinite Pagination and its attributes list
+## Create Infinite Pagination and its attributes list {#create-infinite-pagination-and-its-attributes-list}
 
 This feature enables infinite scrolling, where more content loads dynamically as the user scrolls.
 To implement infinite pagination correctly, follow these key setup steps:
-
-
-
-
-
 
 ### 🚨 Important Setup Requirements
 
