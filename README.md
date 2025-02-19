@@ -20,10 +20,6 @@ A no-code solution that seamlessly integrates filtering and pagination into your
   <br><br>
   <br><br>
   <br><br>
-  <br><br>
-  <br><br>
-  <br><br>
-  <br><br>
 
 ## Supported Filter Types
 
@@ -37,10 +33,6 @@ A no-code solution that seamlessly integrates filtering and pagination into your
 - [**Chips**](#create-chips-filter-and-its-attributes-list) – Visual filter tags for quick selection.
 - [**Reset All Filters**](#create-reset-all-and-its-attributes-list) – Clear all active filters at once.
 - [**Reset Individual Filters**](#create-single-reset-for-filter-category-and-its-attributes-list) – Remove specific filters without affecting others.
-  <br><br>
-  <br><br>
-  <br><br>
-  <br><br>
   <br><br>
   <br><br>
   <br><br>
@@ -58,10 +50,6 @@ A no-code solution that seamlessly integrates filtering and pagination into your
   <br><br>
   <br><br>
   <br><br>
-  <br><br>
-  <br><br>
-  <br><br>
-  <br><br>
 
 ## Get Started
 
@@ -75,14 +63,9 @@ To use **Wized Filter and Pagination**, include the CDN link in the `<head>` tag
   src="https://cdn.jsdelivr.net/npm/wized-filter-and-pagination@1.0.15/dist/index.min.js"
 ></script>
 ```
-
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+  <br><br>
+  <br><br>
+  <br><br>
 
 ## Setup
 
@@ -92,13 +75,9 @@ To use **Wized Filter and Pagination**, include the CDN link in the `<head>` tag
 | ------------------ | ----------------- | ------------ | -------------------------------------------------------------------------------------- |
 | `w-filter-wrapper` | (No value needed) | ✅           | The Webflow form element that wraps all filters, pagination, and items to be filtered. |
 
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+  <br><br>
+  <br><br>
+  <br><br>
 
 ## Create Infinite Pagination and its attributes list {#create-infinite-pagination-and-its-attributes-list}
 
@@ -132,13 +111,9 @@ To implement infinite pagination correctly, follow these key setup steps:
 | `w-filter-result-variable`             | _Wized Variable Name_     | ✅           | The variable that stores the **entire dataset** being filtered and paginated. This variable gets updated as new data is fetched.                        |
 | `w-filter-result-data-path`            | _Wized Request Data Path_ | ✅           | Specifies the **data path** where the new batch of content is located. The script retrieves this data and appends it to the `w-filter-result-variable`. |
 
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+  <br><br>
+  <br><br>
+  <br><br>
 
 ## Create Checkbox Filter and its attributes list
 
@@ -156,13 +131,9 @@ To implement infinite pagination correctly, follow these key setup steps:
 | `w-filter-pagination-current-variable` | _WIZED VARIABLE NAME_ | ✅           | Ensures pagination resets to **page 1** when a checkbox is selected/deselected. Must match the correct Wized variable for pagination.                                        |
 | `w-filter-request`                     | _WIZED REQUEST NAME_  | ✅           | Fires a Wized request to reload filtered content whenever a checkbox is toggled.                                                                                             |
 
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+  <br><br>
+  <br><br>
+  <br><br>
 
 ## Create Radio Select Filter and its attributes list
 
