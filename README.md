@@ -93,7 +93,7 @@ To implement infinite pagination correctly, follow these key setup steps:
 | `w-filter-result-variable`             | _Wized Variable Name_     | ✅           | The variable that stores the **entire dataset** being filtered and paginated. This variable gets updated as new data is fetched.                        |
 | `w-filter-result-data-path`            | _Wized Request Data Path_ | ✅           | Specifies the **data path** where the new batch of content is located. The script retrieves this data and appends it to the `w-filter-result-variable`. |
 
-## Create Checkbox Filter and its attributes list {#create-checkbox-filter-and-its-attributes-list}
+## Create Checkbox Filter and its attributes list
 
 - This filter is ideal for allowing users to select multiple options within a category.
 - You can create multiple checkbox filters as needed. Ensure that attributes with unique values are distinct to prevent conflicts.
@@ -109,7 +109,7 @@ To implement infinite pagination correctly, follow these key setup steps:
 | `w-filter-pagination-current-variable` | _WIZED VARIABLE NAME_ | ✅           | Ensures pagination resets to **page 1** when a checkbox is selected/deselected. Must match the correct Wized variable for pagination.                                        |
 | `w-filter-request`                     | _WIZED REQUEST NAME_  | ✅           | Fires a Wized request to reload filtered content whenever a checkbox is toggled.                                                                                             |
 
-## Create Radio Select Filter and its attributes list {#create-radio-select-filter-and-its-attributes-list}
+## Create Radio Select Filter and its attributes list
 
 - This filter is ideal for allowing users to select only one option from a predefined set.
 - You can create multiple radio selects as needed. Ensure that attributes with unique values are distinct to prevent conflicts.
@@ -125,7 +125,7 @@ To implement infinite pagination correctly, follow these key setup steps:
 | `w-filter-pagination-current-variable` | _WIZED VARIABLE NAME_ | ✅           | Ensures pagination resets to **page 1** when a radio is selected/deselected. Must match the correct Wized variable for pagination.                                              |
 | `w-filter-request`                     | _WIZED REQUEST NAME_  | ✅           | Fires a Wized request to reload filtered content whenever a radio is selected or reset                                                                                          |
 
-## Create Select Filter and its attributes list {#create-select-filter-and-its-attributes-list}
+## Create Select Filter and its attributes list
 
 - This filter is ideal for providing users with a dropdown menu to select a single option from a list.
 - You can create multiple select filters as needed. Ensure that attribute values are unique to prevent conflicts.
@@ -168,7 +168,7 @@ The other text element in the div block will need to have the following attribut
 | `wized`                  | _WIZED IDENTIFIER_ | ✅           | Used to render the option value.                                                      |
 | `w-filter-select-option` | value-text         | ✅           | Defines the actual **value** that will be stored in the Wized variable when selected. |
 
-## Create Select Range Filter and its attributes list {#create-select-range-filter-and-its-attributes-list}
+## Create Select Range Filter and its attributes list
 
 - This filter allows users to select a range using two dropdowns (e.g., a "FROM" and "TO" value).
 - You can create multiple select range filters as needed. Ensure that each filter has unique attribute values to prevent conflicts.
@@ -240,7 +240,7 @@ If your select range filter needs to dynamically load options, follow these addi
 | `wized`                           | _Wized Identifier_ | ✅           | Used to render the option value.                                                 |
 | `w-filter-select-range-to-value`  | `value-text`       | ✅           | Defines the **value** that will be stored in the Wized variable when selected.   |
 
-## Create Sort Filter and its attributes list {#create-sort-filter-and-its-attributes-list}
+## Create Sort Filter and its attributes list
 
 - This filter allows users to sort content using a select dropdown.
 - Multiple sort filters can be used within the same setup.
@@ -255,7 +255,7 @@ If your select range filter needs to dynamically load options, follow these addi
 | `w-filter-pagination-current-variable` | _Wized Variable Name_ | ✅           | Ensures pagination resets to **page 1** when a selection is made. Must match the correct Wized variable for pagination.            |
 | `w-filter-sort-category`               | _Unique Identifier_   | ✅           | Groups sort filters together. Essential for **Chips Filters** and for targeting specific sort groups when using the reset feature. |
 
-### Setting Up the Sort Filter Options {#create-sort-filter-and-its-attributes-list}
+### Setting Up the Sort Filter Options
 
 Although the **Sort Filter** is static, it requires a **separate div block (option wrapper)** to store text elements that define the available sorting options.
 
@@ -274,7 +274,7 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 | `w-filter-sort-orderby` | `asc` / `desc`                  | ✅           | Determines whether the sorting is **ascending (asc)** or **descending (desc)**.                                              |
 | `w-filter-sort-sortby`  | _(Column field name from Xano)_ | ✅           | Specifies the field in Xano by which the content will be sorted. This must match the exact field name in your Xano database. |
 
-## Create Chips Filter and its attributes list {#create-chips-filter-and-its-attributes-list}
+## Create Chips Filter and its attributes list
 
 - Chips are dynamically generated based on the filters selected by the user.
 - To set up chips, you need to create a **div block** that contains:
@@ -300,7 +300,7 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 | --------------- | --------- | ------------ | ---------------------------------------------------------------------------------------- |
 | `w-filter-chip` | `remove`  | ✅           | Applied to the link block inside the chip. Clicking it removes the corresponding filter. |
 
-## Create Search Filter and its attributes list {#create-search-filter-and-its-attributes-list}
+## Create Search Filter and its attributes list
 
 - The Search Filter allows users to filter content based on a keyword search.
 - It requires a simple **input field**, where the script automatically detects and filters content based on the text entered.
@@ -315,7 +315,7 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 | `w-filter-request`                     | _Wized Request Name_  | ✅           | Fires a Wized request to reload filtered content whenever a user types in the search input.                                  |
 | `w-filter-pagination-current-variable` | _Wized Variable Name_ | ✅           | Ensures pagination resets to **page 1** when a search term is entered. Must match the correct Wized variable for pagination. |
 
-## Create Reset All and its attributes list {#create-reset-all-and-its-attributes-list}
+## Create Reset All and its attributes list
 
 - This feature allows users to reset all active filters with a single click.
 - It requires a **single link block element**, which will act as the reset trigger.
@@ -327,7 +327,7 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 | `w-filter-request`                     | _Wized Request Name_  | ✅           | Fires a Wized request to reload filtered content whenever a user clicks on it                                                |
 | `w-filter-pagination-current-variable` | _Wized Variable Name_ | ✅           | Ensures pagination resets to **page 1** when a search term is entered. Must match the correct Wized variable for pagination. |
 
-## Create Single Reset For Filter Category and its attributes list {#create-single-reset-for-filter-category-and-its-attributes-list}
+## Create Single Reset For Filter Category and its attributes list
 
 - This feature allows users to reset a specific filter category without affecting others.
 - It requires a **single link block element**, which will act as the reset trigger.
