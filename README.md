@@ -5,6 +5,10 @@ A no-code solution that seamlessly integrates filtering and pagination into your
 ⚠️ **Note:**
 - This solution is **designed exclusively for Xano** as the backend.
 
+
+
+  
+
 ## 🚀 Quick Links
 
 - [📺 Checkout the Demo](https://www.notion.so/Wized-Filters-and-Pagination-19e18ed965d88089afa2fe9c749eb857?pvs=21)
@@ -14,6 +18,10 @@ A no-code solution that seamlessly integrates filtering and pagination into your
 - [☕ Buy Me a Coffee](https://www.notion.so/Wized-Filters-and-Pagination-19e18ed965d88089afa2fe9c749eb857?pvs=21)
 - [Create an Account on Wized (Affiliate Link)](http://www.google.com)
 - [Create an Account On Xano (Affiliate Link)](https://www.notion.so/44aa13088fd244a2aa43a12bad7bf205?pvs=21)
+
+
+
+
 
 ## Supported Filter Types
 
@@ -28,6 +36,11 @@ A no-code solution that seamlessly integrates filtering and pagination into your
 - **Reset All Filters** – Clear all active filters at once.
 - **Reset Individual Filters** – Remove specific filters without affecting others.
 
+
+
+
+
+
 ## Features
 
 - **Custom Filter Triggers** – Define how and when filters are applied.
@@ -39,6 +52,11 @@ A no-code solution that seamlessly integrates filtering and pagination into your
 - **State Management Built-in** – Filters stay in sync without extra setup.
 - **Seamless Infinite Scroll** – Load more content automatically as users scroll.
 
+
+
+
+
+
 ## Get Started
 
 To use **Wized Filter and Pagination**, include the CDN link in the `<head>` tag of your page:
@@ -48,6 +66,9 @@ To use **Wized Filter and Pagination**, include the CDN link in the `<head>` tag
 <script async type="module" src="https://cdn.jsdelivr.net/npm/wized-filter-and-pagination@1.0.15/dist/index.min.js"></script>
 ```
 
+
+
+
 ## Setup
 
 ### Add Attribute to the Form Element that contains the filters
@@ -55,6 +76,12 @@ To use **Wized Filter and Pagination**, include the CDN link in the `<head>` tag
 | **ATTRIBUTE** | **VALUE** | **REQUIRED** | **DESCRIPTION** |
 |---------------|-----------|--------------|-----------------|
 | `w-filter-wrapper` | (No value needed) | ✅ | The Webflow form element that wraps all filters, pagination, and items to be filtered. |
+
+
+
+
+
+
 
 ## Create Infinite Pagination and its attributes list
 
@@ -86,6 +113,13 @@ To implement infinite pagination correctly, follow these key setup steps:
 | `w-filter-result-variable` | *Wized Variable Name* | ✅ | The variable that stores the **entire dataset** being filtered and paginated. This variable gets updated as new data is fetched. |
 | `w-filter-result-data-path` | *Wized Request Data Path* | ✅ | Specifies the **data path** where the new batch of content is located. The script retrieves this data and appends it to the `w-filter-result-variable`. |
 
+
+
+
+
+
+
+
 ## Create Checkbox Filter and its attributes list
 
 - This filter is ideal for allowing users to select multiple options within a category.
@@ -102,6 +136,13 @@ To implement infinite pagination correctly, follow these key setup steps:
 | `w-filter-pagination-current-variable` | *WIZED VARIABLE NAME* | ✅ | Ensures pagination resets to **page 1** when a checkbox is selected/deselected. Must match the correct Wized variable for pagination. |
 | `w-filter-request` | *WIZED REQUEST NAME* | ✅ | Fires a Wized request to reload filtered content whenever a checkbox is toggled. |
 
+
+
+
+
+
+
+
 ## Create Radio Select Filter and its attributes list
 
 - This filter is ideal for allowing users to select only one option from a predefined set.
@@ -117,6 +158,12 @@ To implement infinite pagination correctly, follow these key setup steps:
 | `w-filter-radio-category` | *UNIQUE IDENTIFIER* | ✅ | Groups radios together. Essential for **Chips Filters** and for targeting specific radio groups when using the reset feature. |
 | `w-filter-pagination-current-variable` | *WIZED VARIABLE NAME* | ✅ | Ensures pagination resets to **page 1** when a radio is selected/deselected. Must match the correct Wized variable for pagination. |
 | `w-filter-request` | *WIZED REQUEST NAME* | ✅ | Fires a Wized request to reload filtered content whenever a radio is selected or reset |
+
+
+
+
+
+
 
 ## Create Select Filter and its attributes list
 
