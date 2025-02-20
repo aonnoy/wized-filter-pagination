@@ -1,9 +1,7 @@
 # Wized Filter and Pagination
 
 A no-code solution that seamlessly integrates filtering and pagination into your Webflow, Wized, and Xano projects. By simply adding attributes to your Webflow filters and configuring requests and elements in Wized, you can set up a fully functional system in minutes—saving you hours of development time.
-
 ⚠️ **Note:**
-
 - This solution is **designed exclusively for Xano** as the backend.
   <br><br>
   <br><br>
@@ -15,8 +13,8 @@ A no-code solution that seamlessly integrates filtering and pagination into your
 - [🌐 Get the Webflow Cloneable](https://www.notion.so/Wized-Filters-and-Pagination-19e18ed965d88089afa2fe9c749eb857?pvs=21)
 - [📦 View the NPM Package](https://www.notion.so/Wized-Filters-and-Pagination-19e18ed965d88089afa2fe9c749eb857?pvs=21)
 - [☕ Buy Me a Coffee](https://www.notion.so/Wized-Filters-and-Pagination-19e18ed965d88089afa2fe9c749eb857?pvs=21)
-- [Create an Account on Wized (Affiliate Link)](http://www.google.com)
-- [Create an Account On Xano (Affiliate Link)](https://www.notion.so/44aa13088fd244a2aa43a12bad7bf205?pvs=21)
+- [🛠️ Create an Account on Wized (Affiliate Link)](http://www.google.com)
+- [🛠️ Create an Account On Xano (Affiliate Link)](https://www.notion.so/44aa13088fd244a2aa43a12bad7bf205?pvs=21)
   <br><br>
   <br><br>
   <br><br>
@@ -70,6 +68,8 @@ To use **Wized Filter and Pagination**, include the CDN link in the `<head>` tag
 ## Setup
 
 ### Add Attribute to the Form Element that contains the filters
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b71986c99472e781610605_Screenshot%202025-02-20%20at%2012.00.40.png)
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b7198d3c5f02b91e2caa8a_Screenshot%202025-02-20%20at%2012.00.52.png)
 
 | **ATTRIBUTE**      | **VALUE**         | **REQUIRED** | **DESCRIPTION**                                                                        |
 | ------------------ | ----------------- | ------------ | -------------------------------------------------------------------------------------- |
@@ -100,6 +100,8 @@ To implement infinite pagination correctly, follow these key setup steps:
 
 3. **Pagination Stops Automatically:**
    - The pagination will **stop functioning** when the Wized variable holding the **next page number** becomes `null`, indicating that there are no more pages to fetch.
+  
+4. The following attributes should be applied to a **div block with no styling**. Additionally, ensure this div is positioned **below the filter item content**.
 
 ![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b686a22ad2b3b31ff2e273_Screenshot%202025-02-20%20at%2001.33.34.png)
 ![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b686c39224f86a83d9f82e_Screenshot%202025-02-20%20at%2001.33.53.png)
@@ -147,6 +149,8 @@ To implement infinite pagination correctly, follow these key setup steps:
 - You can create multiple radio selects as needed. Ensure that attributes with unique values are distinct to prevent conflicts.
 - Attributes should be applied to the **radio select wrapper**.
 - Radio Selects can be **static** or **dynamically generated**. Follow the attribute table below for setup details.
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b68f8bb032b0bef6e4ddf1_Screenshot%202025-02-20%20at%2002.11.52.png)
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b68f97f8c022a57e51ba86_Screenshot%202025-02-20%20at%2002.11.58.png)
 
 | **ATTRIBUTE**                          | **VALUE**             | **REQUIRED** | **DESCRIPTION**                                                                                                                                                                 |
 | -------------------------------------- | --------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -167,6 +171,8 @@ To implement infinite pagination correctly, follow these key setup steps:
 - You can create multiple select filters as needed. Ensure that attribute values are unique to prevent conflicts.
 - Attributes should be applied **directly** to the `<select>` element.
 - The select filter can be **static** or **dynamically loaded**. Follow the attribute table below for setup details.
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b690212de8552877663b72_Screenshot%202025-02-20%20at%2002.14.14.png)
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b69044f8c022a57e5258ba_Screenshot%202025-02-20%20at%2002.15.17.png)
 
 | **ATTRIBUTE**                          | **VALUE**             | **REQUIRED** | **DESCRIPTION**                                                                                                                                                                            |
 | -------------------------------------- | --------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -217,6 +223,8 @@ The other text element in the div block will need to have the following attribut
 - The setup is similar to the standard **Select Filter**, but with separate attributes for "FROM" and "TO" dropdowns.
 
 ### Attributes for "FROM" Select Range
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b6934151d7af312e43b4e7_Screenshot%202025-02-20%20at%2002.27.07.png)
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b6934b981b0268036eb44e_Screenshot%202025-02-20%20at%2002.27.16.png)
 
 | **ATTRIBUTE**                          | **VALUE**             | **REQUIRED** | **DESCRIPTION**                                                                                                                                                   |
 | -------------------------------------- | --------------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -228,6 +236,8 @@ The other text element in the div block will need to have the following attribut
 | `w-filter-pagination-current-variable` | _Wized Variable Name_ | ✅           | Ensures pagination resets to **page 1** when a selection is made. Must match the correct Wized variable for pagination.                                           |
 
 ### Attributes for "TO" Select Range
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b6934151d7af312e43b4e7_Screenshot%202025-02-20%20at%2002.27.07.png)
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b693dd396b35d511107b07_Screenshot%202025-02-20%20at%2002.30.20.png)
 
 | **ATTRIBUTE**                          | **VALUE**             | **REQUIRED** | **DESCRIPTION**                                                                                                                                                   |
 | -------------------------------------- | --------------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -249,6 +259,8 @@ If your select range filter needs to dynamically load options, follow these addi
 5. Ensure the **div blocks** are placed near the select filters, especially if they share the same `w-filter-select-range-category` value.
 
 ### Attributes for "FROM" Select Range Option Wrapper
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b69457780b924c935e2434_Screenshot%202025-02-20%20at%2002.31.58.png)
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b694ad8f983cc9bfbc255d_Screenshot%202025-02-20%20at%2002.33.25.png)
 
 | **ATTRIBUTE**                       | **VALUE**                                      | **REQUIRED** | **DESCRIPTION**                                              |
 | ----------------------------------- | ---------------------------------------------- | ------------ | ------------------------------------------------------------ |
@@ -256,6 +268,8 @@ If your select range filter needs to dynamically load options, follow these addi
 | `w-filter-select-range-from-option` | `wrapper`                                      | ✅           | Identifies the div block as the wrapper for dynamic options. |
 
 ### Attributes for "FROM" Text Elements
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b694c253ce7e04f52771f7_Screenshot%202025-02-20%20at%2002.33.35.png)
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b694cd1a7210c9b97471dc_Screenshot%202025-02-20%20at%2002.33.42.png)
 
 | **ATTRIBUTE**                       | **VALUE**          | **REQUIRED** | **DESCRIPTION**                                                                  |
 | ----------------------------------- | ------------------ | ------------ | -------------------------------------------------------------------------------- |
@@ -265,6 +279,8 @@ If your select range filter needs to dynamically load options, follow these addi
 | `w-filter-select-range-from-value`  | `value-text`       | ✅           | Defines the **value** that will be stored in the Wized variable when selected.   |
 
 ### Attributes for "TO" Select Range Option Wrapper
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b6963ff408125ff2c1244e_Screenshot%202025-02-20%20at%2002.40.31.png)
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b6964d51d7af312e4651fe_Screenshot%202025-02-20%20at%2002.40.40.png)
 
 | **ATTRIBUTE**                     | **VALUE**                                      | **REQUIRED** | **DESCRIPTION**                                              |
 | --------------------------------- | ---------------------------------------------- | ------------ | ------------------------------------------------------------ |
@@ -272,6 +288,8 @@ If your select range filter needs to dynamically load options, follow these addi
 | `w-filter-select-range-to-option` | `wrapper`                                      | ✅           | Identifies the div block as the wrapper for dynamic options. |
 
 ### Attributes for "TO" Text Elements
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b696f2f2bea74a4dd4cc42_Screenshot%202025-02-20%20at%2002.42.05.png)
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b696fdfb9f72bcff4daf94_Screenshot%202025-02-20%20at%2002.42.14.png)
 
 | **ATTRIBUTE**                     | **VALUE**          | **REQUIRED** | **DESCRIPTION**                                                                  |
 | --------------------------------- | ------------------ | ------------ | -------------------------------------------------------------------------------- |
@@ -290,6 +308,8 @@ If your select range filter needs to dynamically load options, follow these addi
 - Multiple sort filters can be used within the same setup.
 - Attributes must be applied **directly** to the `<select>` element.
 - **⚠️ The sort filter currently only supports static options and does not work with dynamically loaded content.**
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b697d6162cf09c6ade6671_Screenshot%202025-02-20%20at%2002.47.16.png)
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b697e3584a3c13a557c28b_Screenshot%202025-02-20%20at%2002.47.23.png)
 
 | **ATTRIBUTE**                          | **VALUE**             | **REQUIRED** | **DESCRIPTION**                                                                                                                    |
 | -------------------------------------- | --------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
@@ -304,6 +324,8 @@ If your select range filter needs to dynamically load options, follow these addi
 Although the **Sort Filter** is static, it requires a **separate div block (option wrapper)** to store text elements that define the available sorting options.
 
 **Attributes for the Option Wrapper:**
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b698564ab810b327e0a876_Screenshot%202025-02-20%20at%2002.49.11.png)
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b6986496c4c59296ee48eb_Screenshot%202025-02-20%20at%2002.49.18.png)
 
 | **ATTRIBUTE**            | **VALUE**                                      | **REQUIRED** | **DESCRIPTION**                                           |
 | ------------------------ | ---------------------------------------------- | ------------ | --------------------------------------------------------- |
@@ -311,6 +333,7 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 | `w-filter-sort-category` | _(Same value as the associated select filter)_ | ✅           | Links this wrapper to the correct sort filter.            |
 
 ### Attributes for Text Elements Inside the Option Wrapper
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b6987753ce7e04f52ae344_Screenshot%202025-02-20%20at%2002.49.26.png)
 
 | **ATTRIBUTE**           | **VALUE**                       | **REQUIRED** | **DESCRIPTION**                                                                                                              |
 | ----------------------- | ------------------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------- |
@@ -329,20 +352,24 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
   - A **text element** (chip label)
   - A **link block** (chip remove trigger)
 - **You do not need to manually hide the chip template**—the script automatically handles its visibility.
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b69b976af87ba823011196_Screenshot%202025-02-20%20at%2003.03.04.png)
 
 ### Attribute for the Chip Template (div block)
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b69bad8f983cc9bfc2a712_Screenshot%202025-02-20%20at%2003.03.11.png)
 
 | **ATTRIBUTE**   | **VALUE** | **REQUIRED** | **DESCRIPTION**                                       |
 | --------------- | --------- | ------------ | ----------------------------------------------------- |
 | `w-filter-chip` | `chip`    | ✅           | Applied to the chip template to define its structure. |
 
 ### Attribute for the Chip Label
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b69bbf3b1fb5527225d26f_Screenshot%202025-02-20%20at%2003.03.18.png)
 
 | **ATTRIBUTE**   | **VALUE** | **REQUIRED** | **DESCRIPTION**                                                                   |
 | --------------- | --------- | ------------ | --------------------------------------------------------------------------------- |
 | `w-filter-chip` | `label`   | ✅           | Applied to the text element inside the chip to display the selected filter value. |
 
 ### Attribute for the Chip Remove Button
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b69bd263fef312ee0886f4_Screenshot%202025-02-20%20at%2003.03.27.png)
 
 | **ATTRIBUTE**   | **VALUE** | **REQUIRED** | **DESCRIPTION**                                                                          |
 | --------------- | --------- | ------------ | ---------------------------------------------------------------------------------------- |
@@ -357,6 +384,9 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 - The Search Filter allows users to filter content based on a keyword search.
 - It requires a simple **input field**, where the script automatically detects and filters content based on the text entered.
 - The following attributes must be applied to the **search input field**.
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b69c473b1fb5527226796a_Screenshot%202025-02-20%20at%2003.06.10.png)
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b69c4f50e810f9f1cb757b_Screenshot%202025-02-20%20at%2003.06.19.png)
+
 
 ### Search Filter Attributes
 
@@ -376,6 +406,9 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 - This feature allows users to reset all active filters with a single click.
 - It requires a **single link block element**, which will act as the reset trigger.
 - The following attributes must be applied to the reset link block.
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b69ca0335a6e59be6bc7b1_Screenshot%202025-02-20%20at%2003.07.41.png)
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b69ca6d0b1e9668cb7ce65_Screenshot%202025-02-20%20at%2003.07.48.png)
+
 
 | **ATTRIBUTE**                          | **VALUE**             | **REQUIRED** | **DESCRIPTION**                                                                                                              |
 | -------------------------------------- | --------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------- |
@@ -391,8 +424,10 @@ Although the **Sort Filter** is static, it requires a **separate div block (opti
 
 - This feature allows users to reset a specific filter category without affecting others.
 - It requires a **single link block element**, which will act as the reset trigger.
-- **⚠️ Important:** The reset button **must be placed close** to the filter group it resets.
+- **⚠️ Important: The reset button must be placed near the filter group it is intended to reset. Note: The single reset feature does not apply to Search and Sort filters.**
 - The following attributes must be applied to the reset link block.
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b69e5b16844089f33e5fa7_Screenshot%202025-02-20%20at%2003.14.55.png)
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b69e6606e0b321735e3353_Screenshot%202025-02-20%20at%2003.15.16.png)
 
 | **ATTRIBUTE**             | **VALUE**                                                           | **REQUIRED** | **DESCRIPTION**                                                                                   |
 | ------------------------- | ------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------- |
