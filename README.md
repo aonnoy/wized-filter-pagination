@@ -101,7 +101,9 @@ To implement infinite pagination correctly, follow these key setup steps:
 3. **Pagination Stops Automatically:**
    - The pagination will **stop functioning** when the Wized variable holding the **next page number** becomes `null`, indicating that there are no more pages to fetch.
 
-![Alt text](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b686a22ad2b3b31ff2e273_Screenshot%202025-02-20%20at%2001.33.34.png)
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b686a22ad2b3b31ff2e273_Screenshot%202025-02-20%20at%2001.33.34.png)
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b686c39224f86a83d9f82e_Screenshot%202025-02-20%20at%2001.33.53.png)
+
 
 | **ATTRIBUTE**                          | **VALUE**                 | **REQUIRED** | **DESCRIPTION**                                                                                                                                         |
 | -------------------------------------- | ------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -123,6 +125,8 @@ To implement infinite pagination correctly, follow these key setup steps:
 - You can create multiple checkbox filters as needed. Ensure that attributes with unique values are distinct to prevent conflicts.
 - Attributes should be applied to the **checkbox wrapper**.
 - Checkboxes can be **static** or **dynamically generated**. Follow the attribute table below for setup details.
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b687f78e3a3ff529099e8f_Screenshot%202025-02-20%20at%2001.39.36.png)
+![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b68800508157d6423be4ea_Screenshot%202025-02-20%20at%2001.39.47.png)
 
 | **ATTRIBUTE**                          | **VALUE**             | **REQUIRED** | **DESCRIPTION**                                                                                                                                                              |
 | -------------------------------------- | --------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
