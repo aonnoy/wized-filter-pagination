@@ -308,6 +308,7 @@ If your select range filter needs to dynamically load options, follow these addi
 - Multiple sort filters can be used within the same setup.
 - Attributes must be applied **directly** to the `<select>` element.
 - **⚠️ The sort filter currently only supports static options and does not work with dynamically loaded content.**
+
 ![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b697d6162cf09c6ade6671_Screenshot%202025-02-20%20at%2002.47.16.png)
 ![Webflow Screenshot](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b697e3584a3c13a557c28b_Screenshot%202025-02-20%20at%2002.47.23.png)
 
