@@ -101,7 +101,7 @@ To implement infinite pagination correctly, follow these key setup steps:
 3. **Pagination Stops Automatically:**
    - The pagination will **stop functioning** when the Wized variable holding the **next page number** becomes `null`, indicating that there are no more pages to fetch.
 
-![Alt text]([https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b686a22ad2b3b31ff2e273_Screenshot%202025-02-20%20at%2001.33.34.png])
+![Alt text](https://cdn.prod.website-files.com/657244ba4d804c29a2ef5ce0/67b686a22ad2b3b31ff2e273_Screenshot%202025-02-20%20at%2001.33.34.png)
 
 | **ATTRIBUTE**                          | **VALUE**                 | **REQUIRED** | **DESCRIPTION**                                                                                                                                         |
 | -------------------------------------- | ------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
