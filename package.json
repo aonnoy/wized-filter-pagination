@@ -1,6 +1,6 @@
 {
   "name": "wized-filter-and-pagination",
-  "version": "1.0.19-staging.20250301013106-staging.20251123202733",
+  "version": "1.0.20",
   "description": "Wized filter and pagination functionality",
   "main": "dist/index.min.js",
   "module": "dist/index.esm.js",
@@ -69,6 +69,7 @@
     "@babel/core": "^7.26.9",
     "@babel/preset-env": "^7.26.9",
     "@eslint/js": "^8.56.0",
+    "@jest/test-sequencer": "^30.2.0",
     "@parcel/compressor-brotli": "^2.13.3",
     "@parcel/compressor-gzip": "^2.13.3",
     "@parcel/optimizer-css": "^2.13.3",
