@@ -105,7 +105,7 @@ describe('FilterSearchManager', () => {
       newInput.setAttribute('w-filter-search-variable', 'newSearchVar');
       newInput.setAttribute('w-filter-pagination-current-variable', 'currentPage');
       newInput.setAttribute('w-filter-request', 'filterRequest');
-      
+
       const addEventListenerSpy = jest.spyOn(newInput, 'addEventListener');
       manager.setupSearch(newInput);
       expect(addEventListenerSpy).toHaveBeenCalledWith('input', expect.any(Function));
@@ -128,7 +128,7 @@ describe('FilterSearchManager', () => {
       // Don't set w-filter-search-variable attribute
       newInput.setAttribute('w-filter-pagination-current-variable', 'currentPage');
       newInput.setAttribute('w-filter-request', 'filterRequest');
-      
+
       const initialSize = manager.state.monitoredSearches.size;
       manager.setupSearch(newInput);
       // Size should not increase since the input is missing required attribute
