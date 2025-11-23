@@ -41,6 +41,14 @@ describe('FilterSearchManager', () => {
       return [];
     });
 
+    // Mock querySelectorAll on the wrapper element
+    mockWrapper.querySelectorAll = jest.fn((selector) => {
+      if (selector === 'input[w-filter-search-variable]') {
+        return [mockInput];
+      }
+      return [];
+    });
+
     // Initialize Wized mock data
     Wized.data = {
       v: {},
@@ -92,8 +100,14 @@ describe('FilterSearchManager', () => {
   // Search input setup tests
   describe('search input setup', () => {
     test('should setup search input with event listener', () => {
-      const addEventListenerSpy = jest.spyOn(mockInput, 'addEventListener');
-      manager.setupSearch(mockInput);
+      // Create a new input that wasn't set up during initialization
+      const newInput = document.createElement('input');
+      newInput.setAttribute('w-filter-search-variable', 'newSearchVar');
+      newInput.setAttribute('w-filter-pagination-current-variable', 'currentPage');
+      newInput.setAttribute('w-filter-request', 'filterRequest');
+      
+      const addEventListenerSpy = jest.spyOn(newInput, 'addEventListener');
+      manager.setupSearch(newInput);
       expect(addEventListenerSpy).toHaveBeenCalledWith('input', expect.any(Function));
     });
 
@@ -110,9 +124,15 @@ describe('FilterSearchManager', () => {
     });
 
     test('should handle missing variable attribute', () => {
-      mockInput.removeAttribute('w-filter-search-variable');
-      manager.setupSearch(mockInput);
-      expect(manager.state.monitoredSearches.size).toBe(0);
+      const newInput = document.createElement('input');
+      // Don't set w-filter-search-variable attribute
+      newInput.setAttribute('w-filter-pagination-current-variable', 'currentPage');
+      newInput.setAttribute('w-filter-request', 'filterRequest');
+      
+      const initialSize = manager.state.monitoredSearches.size;
+      manager.setupSearch(newInput);
+      // Size should not increase since the input is missing required attribute
+      expect(manager.state.monitoredSearches.size).toBe(initialSize);
     });
   });
 
