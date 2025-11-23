@@ -47,6 +47,9 @@ class FilterSearchManager {
     // Set up request monitoring
     this.Wized.on('requestend', this.handleRequestEnd);
 
+    // Set up initial monitoring
+    this.setupFilterMonitoring();
+
     this.state.initialized = true;
   }
 
@@ -213,20 +216,6 @@ class FilterSearchManager {
       );
     }
     console.log('=== Search Reset Complete ===');
-  }
-}
-
-// Initialize Wized and the FilterSearchManager
-if (typeof window !== 'undefined') {
-  window.Wized = window.Wized || [];
-  if (!Array.isArray(window.Wized)) {
-    // If Wized is already initialized, create instance immediately
-    new FilterSearchManager(window.Wized);
-  } else {
-    // Otherwise wait for Wized initialization
-    window.Wized.push((Wized) => {
-      new FilterSearchManager(Wized);
-    });
   }
 }
 
