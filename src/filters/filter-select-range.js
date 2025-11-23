@@ -565,11 +565,3 @@ export default class FilterSelectRangeManager {
     });
   }
 }
-
-// Initialize Wized and the FilterSelectRangeManager
-if (typeof window !== 'undefined') {
-  window.Wized = window.Wized || [];
-  window.Wized.push((Wized) => {
-    new FilterSelectRangeManager(Wized);
-  });
-}
